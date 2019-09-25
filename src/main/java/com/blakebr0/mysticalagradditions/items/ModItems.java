@@ -18,13 +18,6 @@ public class ModItems {
 
 	public static ItemTier6Seed itemTier6InferiumSeeds = new ItemTier6Seed("tier6_inferium_seeds", ModBlocks.blockTier6InferiumCrop);
 
-	public static ItemCharm itemCharm = new ItemCharm();
-
-	public static ItemPaxel itemInferiumPaxel = new ItemPaxel("inferium_paxel", ModToolMaterials.INFERIUM, TextFormatting.YELLOW);
-	public static ItemPaxel itemPrudentiumPaxel = new ItemPaxel("prudentium_paxel", ModToolMaterials.PRUDENTIUM, TextFormatting.GREEN);
-	public static ItemPaxel itemIntermediumPaxel = new ItemPaxel("intermedium_paxel", ModToolMaterials.INTERMEDIUM, TextFormatting.GOLD);
-	public static ItemPaxel itemSuperiumPaxel = new ItemPaxel("superium_paxel", ModToolMaterials.SUPERIUM, TextFormatting.AQUA);
-	public static ItemPaxel itemSupremiumPaxel = new ItemPaxel("supremium_paxel", ModToolMaterials.SUPREMIUM, TextFormatting.RED);
 
 	public static void init() {
 		final ModRegistry registry = MysticalAgradditions.REGISTRY;
@@ -53,13 +46,8 @@ public class ModItems {
 		}
 
 		if (MAHelper.config.confGearModuleOverride) {
-			registry.register(itemCharm, "charm");
 
-			registry.register(itemInferiumPaxel, "inferium_paxel", MAHelper.items.itemCrafting.itemInferiumIngot);
-			registry.register(itemPrudentiumPaxel, "prudentium_paxel", MAHelper.items.itemCrafting.itemPrudentiumIngot);
-			registry.register(itemIntermediumPaxel, "intermedium_paxel", MAHelper.items.itemCrafting.itemIntermediumIngot);
-			registry.register(itemSuperiumPaxel, "superium_paxel", MAHelper.items.itemCrafting.itemSuperiumIngot);
-			registry.register(itemSupremiumPaxel, "supremium_paxel", MAHelper.items.itemCrafting.itemSupremiumIngot);
+
 		}
 	}
 }

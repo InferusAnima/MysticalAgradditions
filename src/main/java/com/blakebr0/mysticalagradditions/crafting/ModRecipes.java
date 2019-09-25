@@ -48,8 +48,7 @@ public class ModRecipes {
 		if (type.NEUTRONIUM.isEnabled()) { MAHelper.addEssenceRecipe(MAHelper.getOre("nuggetCosmicNeutronium", 3), "EEE", "EEE", "EEE", 'E', new ItemStack(type.NEUTRONIUM.getCrop(), 1, 0)); }		
 	
 		if (MAHelper.config.confGearModuleOverride) {
-			com.blakebr0.mysticalagriculture.crafting.ModRecipes.addUpgradeRecipe(new ItemStack(ModItems.itemSupremiumPaxel), new ItemStack(ModItems.itemCharm, 1, 0), 1000);
-			MAHelper.addShapedRecipe(new ItemStack(ModItems.itemCharm, 1, 0), "MED", "EBE", "DEM", 'E', MAHelper.items.itemCrafting.itemSuperiumEssence, 'B', MAHelper.items.itemCharm.itemCharmBlank, 'M', new ItemStack(ModItems.itemSupremiumPaxel, 1, 0), 'D', MAHelper.items.itemCrafting.itemSupremiumIngot);
+
 		}
 	}
 }
